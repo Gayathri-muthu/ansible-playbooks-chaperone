@@ -13,10 +13,12 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 #
-[defaults]
-remote_user = vmware
-roles_path = ../../roles
-host_key_checking = False
-#library = /usr/share/ansible:../library
-library = ../../library
-invalid_task_attribute_failed=False
+---
+- name:  Deploy PKS
+  hosts: localhost
+  roles:
+    - pks
+  vars_files:
+    - /var/lib/chaperone-admin/answerfile.yml
+    - /var/lib/chaperone/answerfile.yml
+
