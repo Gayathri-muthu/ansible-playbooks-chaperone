@@ -20,8 +20,8 @@
     django_domain: "corp.local"
     django_app: "chaperone"
     django_admin_app: "chaperone-admin"
-    django_shortname: "Chaperone"
-    django_admin_shortname: "Chaperone Administration"
+    django_shortname: "Chaperone 2.0"
+    django_admin_shortname: "Chaperone Administration 2.0"
     django_debug: True
     django_template_debug: True
     apache_loglevel: debug
